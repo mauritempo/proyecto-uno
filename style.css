@@ -1,0 +1,106 @@
+header{
+    
+    
+    
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    
+    /*background-color: aqua;
+    */
+    
+}
+.logo{
+    
+}
+nav{
+    
+    display: flex;
+    flex-direction: column;
+    flex-flow:column-reverse;
+    justify-content: space-between;
+    align-content: center;
+    margin: 12;
+}
+a{
+    text-decoration: none;
+}
+.boton{
+    color: black;
+    background-color: white;
+    width: 150px;
+    border: 3px solid rgb(255, 255, 255);
+    margin: 20px;
+    text-align: center;
+    
+   
+    
+    
+}
+
+
+
+body{
+    
+        background-image:url("./Screenshot_1.png");
+        background-size: cover;
+        backdrop-filter: saturate(0.9) ;
+        backdrop-filter: blur(2);
+        height: 100%;
+        margin: 0;
+        background-attachment: fixed;
+        
+    
+    
+    
+    
+    
+    .aside{
+        display: flex;
+        justify-content: center;
+
+    }
+    main {
+        flex: 1; /* El main ocupa el resto del espacio disponible */
+        padding: 20px;
+        display: flex;
+        flex-direction: row; /* Organiza los elementos en columna */
+        justify-content: flex-start; /* Alinea los elementos al inicio */
+        font: italic small-caps bold 14px cursive;
+        text-decoration-color: #8B0000;
+        
+        color:black;
+
+        
+        
+      }
+    .boton{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items:flex-start;
+    }
+    .pizza-quantity{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    
+}
+
+footer{
+    text-decoration: none;
+    height: max-content;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    /*background-color: aqua;
+    */
+}
+
