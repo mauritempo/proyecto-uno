@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Index.html</title>
     <link rel="stylesheet" href="style.css">
     <script src="./function.JS"></script>
 </head>
 
 <body>
-   
-    
     
     <header>
         <div class="logo">
@@ -28,8 +26,7 @@
     
     <main>
         <aside><img src="./pizza.jpg" alt="pizza" width="460" height="370"></aside>
-        <ol>
-            <li><strong>Alimenta tu masa madre:</strong> Asegúrate de que esté activa y burbujeante antes de usarla.</li>
+        <ol><li><strong>Alimenta tu masa madre:</strong> Asegúrate de que esté activa y burbujeante antes de usarla.</li>
             <li><strong>Mezcla ingredientes:</strong> Combina masa madre, agua, harina y sal en un bol grande. Mezcla hasta que los ingredientes se integren.</li>
             <li><strong>Amasa:</strong> Amasa durante unos 10-15 minutos hasta que la masa esté suave, elástica y no pegajosa.</li>
             <li><strong>Primer fermentado:</strong> Coloca la masa en un bol ligeramente aceitado, cúbrela con un paño y déjala reposar en un lugar cálido durante unas horas hasta que doble su tamaño.</li>
@@ -38,41 +35,36 @@
             <li><strong>Segundo fermentado:</strong> Deja reposar las bases cubiertas con un paño durante unos 30 minutos para que se aireen y fermenten un poco más.</li>
             <li><strong>Prepara los toppings:</strong> Añade salsa de tomate, queso y los ingredientes que prefieras (vegetales, carnes, etc.).</li>
             <li><strong>Hornea:</strong> Precalienta el horno al máximo (250°C o más si es posible) y hornea las pizzas durante 10-15 minutos o hasta que estén doradas y crujientes.</li>
-          </ol>
+        </ol>
         
     </main>
     
     <div class="pizza-quantity">
         <label for="cantidad-pizzas">¿Cuántas pizzas quieres hacer?</label>
-            <select name="cantidad" id="cantidad-pizzas" onchange="calcularTotal()">
+        <select name="cantidad" id="cantidad-pizzas" >
             <option value="0" selected>ninguna</option>
             <option value="2">2 pizzas</option>
             <option value="4">4 pizzas</option>
             <option value="6">6 pizzas</option>
             <option value="8">8 pizzas</option>
-            </select>
-        <p id="resultado"></p>
-        <script>
-            function calcularTotal() 
-            {
-              const cantidadPizzas = document.getElementById('cantidad-pizzas').value;
-              const precioPorPizza = 15; // Precio por pizza (ejemplo)
-              const total = cantidadPizzas * precioPorPizza;
-            
-              document.getElementById('resultado').textContent = `El total es: $${total}`;
-            }
-        </script>
+        </select>
+        <button onclick="calculateIngredients()">Calcular Ingredientes</button>
+
+        
+        <h2>Resultados:</h2>
+        <p id="result"></p>
+
     </div>
     
     
-    
-    
-    <footer>    
-        <a href="">link a videos con imagenes</a>
-        <a href="">link a videos con imagenes</a>
-    
-    
+    <footer>
+        <a href="https://www.youtube.com/watch?v=xeiGLU6rHiA&pp=ygUQcGl6emEgbWFzYSBtYWRyZQ%3D%3D" class="pie-pag">
+            <img src="https://th.bing.com/th/id/OIP.1bEvUODwCty5k4WU8zwa7QHaHa?rs=1&pid=ImgDetMain" alt="logo" width="40" height="30">
+        </a>
     </footer>
+
+    <script src="function."></script>
+
 </body>
 
 </html>

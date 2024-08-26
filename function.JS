@@ -1,20 +1,14 @@
-function calcularTotal() {
-    const cantidadPizzas = document.getElementById('cantidad-pizzas').value;
-    const tamanioPizza = document.getElementById('tamanio-pizza').value; // Suponiendo que hay otro select para el tamaño
-    let precioPorPizza;
-  
-    switch (tamanioPizza) {
-      case 'chica':
-        precioPorPizza = 10;
-        break;
-      case 'mediana':
-        precioPorPizza = 15;
-        break;
-      case 'grande':
-        precioPorPizza = 20;
-        break;
-    }
-  
-    const total = cantidadPizzas * precioPorPizza;
-    // ... resto del código ...
-  }
+function calculateIngredients() {
+  const quantity = document.getElementById("cantidad-pizzas").value;
+
+
+  const harinaPorPizza = 200; // gramos
+  const aguaPorPizza = 120; // ml
+
+
+  const totalHarina = harinaPorPizza * quantity;
+  const totalAgua = aguaPorPizza * quantity;
+
+
+  document.getElementById("result").innerHTML = `Para ${quantity} pizzas necesitas ${totalHarina} gramos de harina y ${totalAgua} ml de agua.`;
+}
